@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>All publishers</title>
+    <style>
+        body {
+            background-color: lightblue;
+        }
+        table {
+            font-family: "Times New Roman", Times, serif;
+            border: 1px solid #FFFFFF;
+            width: 800px;
+            text-align: center;
+            border-collapse: collapse;
+        }
+        table td, table th {
+            border: 1px solid #FFFFFF;
+            padding: 3px 2px;
+        }
+        table tbody td {
+            font-size: 13px;
+        }
+        table tr:nth-child(even) {
+            background: #D0E4F5;
+        }
+        table thead {
+            background: #0B6FA4;
+            border-bottom: 5px solid #FFFFFF;
+        }
+        table thead th {
+            font-size: 17px;
+            font-weight: bold;
+            color: #FFFFFF;
+            text-align: center;
+            border-left: 2px solid #FFFFFF;
+        }
+        table thead th:first-child {
+            border-left: none;
+        }
+        h1 {
+            font-family:"Arial Black";
+        }
+        a:link, a:visited {
+            background-color: #f44336;
+            color: white;
+            padding: 14px 25px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        a:hover, a:active {
+            background-color: red;
+        }
+
+    </style>
+</head>
+<body>
+<h1 align="center">All publishers</h1>
+<br><br>
+
+<table align="center">
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Nip</th>
+        <th>Adress</th>
+    </tr>
+    <tr th:each="publisher : ${publishers}">
+        <td th:text="${publisher.id}"></td>
+        <td th:text="${publisher.name}"></td>
+        <td th:text="${publisher.nip}"></td>
+        <td th:text="${publisher.address}"></td>
+    </tr>
+</table>
+<br>
+<center>
+<a href="/addBooks">Add books</a>
+<a href="/">Go to mainpage</a>
+</center>
+</body>
+</html>

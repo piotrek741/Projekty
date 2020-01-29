@@ -1,0 +1,84 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Add Books</title>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            background-color: lightblue;
+        }
+        th, td {
+            padding: 15px;
+            border-bottom: 1px solid #ddd;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        h1 {
+            font-family:"Arial Black";
+        }
+        input[type=submit], input[type=reset]  {
+            background-color: #f44336;
+            color: white;
+            padding: 14px 25px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+        }
+        a:link, a:visited {
+            background-color: #f44336;
+            color: white;
+            padding: 14px 25px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        a:hover, a:active {
+            background-color: red;
+        }
+
+    </style>
+</head>
+<body>
+<center>
+<h1>Add Books</h1>
+<br>
+<form action="#" th:action="@{/addBooks}" th:object="${Books}" method="post">
+    <p>
+        Title: <input type="text" th:field="*{title}">
+    </p>
+    <p>
+        Genre: <input type="text" th:field="*{genre}">
+    </p>
+    <p>
+        Ismn: <input type="text" th:field="*{ismn}">
+    </p>
+    <p>
+        Year: <input type="text" th:field="*{year}">
+    </p>
+    <p>
+        Publisher name: <input type="text" th:field="*{publisher.name}">
+    </p>
+    <p>
+        Publisher nip: <input type="text" th:field="*{publisher.nip}">
+    </p>
+    <p>
+        Publisher address: <input type="text" th:field="*{publisher.address}">
+    </p>
+
+    <p>
+        LibraryName: <input type="text" th:field="*{Library.LibraryName}">
+    </p>
+    <p>
+        YearofCreationLibrary: <input type="text" th:field="*{Library.YearofCreationLibrary}">
+    </p>
+    <p>
+        <input type="submit" value="Submit"/> <input type="reset" value="Reset">
+    </p>
+</form>
+    <br>
+    <a href="/">Go to mainpage</a>
+</center>
+</body>
+</html>
