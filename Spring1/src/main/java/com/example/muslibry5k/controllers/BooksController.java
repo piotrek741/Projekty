@@ -22,19 +22,22 @@ public class BooksController {
         this.LibraryRepository = LibraryRepository;
     }
 
-    @GetMapping("/Bookss")
+    @GetMapping("/Books")
     public String getBookss(Model model) {
-        model.addAttribute("Bookss", BooksRepository.findAll());
-        return "Bookss";
+        model.addAttribute("Books", BooksRepository.findAll());
+        return "Books";
     }
 
     @GetMapping("/addBooks")
-    public String sendFormAddBooks(Books Books){
+    public String sendFormAddBooks(Books Books, Model model){
+        model.addAttribute("Books", new Books());
+
         return "addBooks";
     }
 
     @PostMapping("/addBooks")
-    public String processFormAddBooks(Books Books){
+    public String processFormAddBooks(Books Books, Model model){
+        model.addAttribute("Books", Books);
         publisherRepository.save(Books.getPublisher());
         LibraryRepository.save(Books.getLibrary());
         BooksRepository.save(Books);
