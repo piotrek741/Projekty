@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Books</title>
+    <style>
+        body {
+            background-color: lightblue;
+        }
+        table {
+            font-family: "Times New Roman", Times, serif;
+            border: 1px solid #FFFFFF;
+            width: 800px;
+            text-align: center;
+            border-collapse: collapse;
+        }
+        table td, table th {
+            border: 1px solid #FFFFFF;
+            padding: 3px 2px;
+        }
+        table tbody td {
+            font-size: 13px;
+        }
+        table tr:nth-child(even) {
+            background: #D0E4F5;
+        }
+        table thead {
+            background: #0B6FA4;
+            border-bottom: 5px solid #FFFFFF;
+        }
+        table thead th {
+            font-size: 17px;
+            font-weight: bold;
+            color: #FFFFFF;
+            text-align: center;
+            border-left: 2px solid #FFFFFF;
+        }
+        table thead th:first-child {
+            border-left: none;
+        }
+
+        h1 {
+            font-family:"Arial Black";
+        }
+        a:link, a:visited {
+            background-color: #f44336;
+            color: white;
+            padding: 14px 25px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        a:hover, a:active {
+            background-color: red;
+        }
+
+    </style>
+</head>
+<body>
+<h1 align="center">Books</h1>
+<br><br>
+    <table align="center">
+        <tr>
+            <th>ID</th>
+            <th>Title</th>
+            <th>Year</th>
+            <th>Publisher Name</th>
+            <th>Library Name</th>
+        </tr>
+        <tr th:each="Books : ${Books}">
+            <td th:text="${Books.id}"/>
+            <td th:text="${Books.title}"/>
+            <td th:text="${Books.year}"/>
+            <td th:text="${Books.publisher.name}"></td>
+            <td th:text="${Books.Library.LibraryName}"></td>
+        </tr>
+    </table>
+<br>
+<center>
+<a href="/addBooks">Add Books</a>
+<a href="/">Go to mainpage</a>
+</center>
+</body>
+</html>

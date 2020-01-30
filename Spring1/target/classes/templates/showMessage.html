@@ -1,0 +1,80 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Show message</title>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            background-color: lightblue;
+        }
+
+        table {
+            font-family: "Times New Roman", Times, serif;
+            border: 1px solid #FFFFFF;
+            width: 800px;
+            text-align: center;
+            border-collapse: collapse;
+        }
+        table td, table th p{
+            border: 1px solid #FFFFFF;
+            padding: 3px 2px;
+        }
+        table tbody td {
+            font-size: 13px;
+        }
+        table tr:nth-child(even) {
+            background: #D0E4F5;
+        }
+        table thead {
+            background: #0B6FA4;
+            border-bottom: 5px solid #FFFFFF;
+        }
+        table thead th p {
+            font-size: 17px;
+            font-weight: bold;
+            color: #FFFFFF;
+            text-align: center;
+            border-left: 2px solid #FFFFFF;
+        }
+        table thead p th:first-child {
+            border-left: none;
+        }
+        h1 {
+            font-family:"Arial Black";
+        }
+        a:link, a:visited {
+            background-color: #f44336;
+            color: white;
+            padding: 14px 25px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        a:hover, a:active {
+            background-color: red;
+        }
+
+    </style>
+</head>
+<center>
+
+<h1>Result</h1>
+
+<p th:text="'Title: ' + ${Books.title}"></p>
+<p th:text="'Genre: ' + ${Books.genre}"></p>
+<p th:text="'Ismn: ' + ${Books.ismn}"></p>
+<p th:text="'Year: ' + ${Books.year}"></p>
+<p th:text="'Publisher - Name: ' + ${Books.publisher.name}"></p>
+<p th:text="'Publisher - Nip: ' + ${Books.publisher.nip}"></p>
+<p th:text="'Publisher - Address: ' + ${Books.publisher.address}"></p>
+<p th:text="'Library Title: ' + ${Books.Library.LibraryTitle}"></p>
+<p th:text="'Library Year: ' + ${Books.Library.LibraryYear}"></p>
+
+<a href="/addBooks">Submit another Books</a>
+<a href="/Bookss">Check all Bookss</a>
+<a href="/">Go to mainpage</a>
+
+</center>
+</body>
+</html>
