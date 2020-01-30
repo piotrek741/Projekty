@@ -15,10 +15,10 @@ public class Author {
     private String lastName;
     private String nick;
 
-    @ManyToMany(mappedBy = "Authors")
-    private Set<Books> Books = new HashSet<>();
+    @ManyToMany
+    private Set<Books> books = new HashSet<>();
 
-    @ManyToMany(mappedBy = "Authors")
+    @ManyToMany
     private Set<Library> Library = new HashSet<>();
 
     public Author() {
@@ -34,7 +34,7 @@ public class Author {
         this.firstName = firstName;
         this.lastName = lastName;
         this.nick = nick;
-        this.Books = Books;
+        this.books = Books;
     }
 
     public Long getId() {
@@ -70,11 +70,11 @@ public class Author {
     }
 
     public Set<Books> getBooks() {
-        return Books;
+        return books;
     }
 
     public void setBooks(Set<Books> Books) {
-        this.Books = Books;
+        this.books = Books;
     }
 
     @Override
@@ -84,7 +84,7 @@ public class Author {
                 ", firstName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +
                 ", nick='" + nick + '\'' +
-                ", Books=" + Books +
+                ", Books=" + books +
                 '}';
     }
 

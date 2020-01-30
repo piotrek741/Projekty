@@ -22,8 +22,8 @@ public class Books {
     @ManyToOne
     private Library Library;
 
-    @ManyToMany
-    private Set<Author> Author = new HashSet<>();
+    @ManyToMany(mappedBy = "books")
+    private Set<Author> Authors = new HashSet<>();
 
     public Books() {
     }
@@ -37,13 +37,13 @@ public class Books {
         this.Library = Library;
     }
 
-    public Books(String title, String genre, String ismn, String year, Publisher publisher, Set<Author> Author, Library Library) {
+    public Books(String title, String genre, String ismn, String year, Publisher publisher, Set<Author> Authors, Library Library) {
         this.title = title;
         this.genre = genre;
         this.ismn = ismn;
         this.year = year;
         this.publisher = publisher;
-        this.Author = Author;
+        this.Authors = Authors;
         this.Library = Library;
     }
 
@@ -79,12 +79,12 @@ public class Books {
         this.year = year;
     }
 
-    public Set<Author> getAuthor() {
-        return Author;
+    public Set<Author> getAuthors() {
+        return Authors;
     }
 
-    public void setAuthor(Set<Author> Author) {
-        this.Author = Author;
+    public void setAuthors(Set<Author> Authors) {
+        this.Authors = Authors;
     }
 
     public Long getId() {
@@ -122,9 +122,5 @@ public class Books {
                 ", publisher=" + publisher + '\'' +
                 ", Library=" + Library +
                 '}';
-    }
-
-    public Collection<com.example.muslibry5k.model.Author> getAuthors() {
-        return null;
     }
 }

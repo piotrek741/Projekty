@@ -35,24 +35,21 @@ public class DBInflater implements ApplicationListener<ContextRefreshedEvent> {
     private void initData() {
 
         Author Christie = new Author("Christie", "Golden", "Golden");
+        AuthorRepository.save(Christie);
         Publisher France = new Publisher("France Records", "12", "32");
+        publisherRepository.save(France);
         Library LibraryeOne = new Library("Kolorowa", "1233");
+        LibraryRepository.save(LibraryeOne);
         Books Warcraft = new Books("Warcraft", "fantasy", "1983129873",
                 "2012", France, LibraryeOne);
-        boolean add1 = Christie.getBookss().add(Warcraft);
         Warcraft.getAuthors().add(Christie);
-        publisherRepository.save(France);
-        LibraryRepository.save(LibraryeOne);
-        AuthorRepository.save(Christie);
         BooksRepository.save(Warcraft);
-
 
         Author Andrzej = new Author("Andrzej", "Sapkowski", "Andrzej");
         Publisher island = new Publisher("Island Records","12", "32");
         Library LibraryeTwo = new Library("Biblioteca Nacional de Mexico", "1233");
         Books Wiedzmin = new Books("Wiedzmin", "fantasy", "98172391123",
                 "2002", island, LibraryeTwo);
-        Andrzej.getBookss().add(Wiedzmin);
         Wiedzmin.getAuthors().add(Andrzej);
         publisherRepository.save(island);
         LibraryRepository.save(LibraryeTwo);
@@ -65,7 +62,6 @@ public class DBInflater implements ApplicationListener<ContextRefreshedEvent> {
         Library LibraryeThree = new Library("Public Library in Seattle", "1233");
         Books It = new Books("It", "Creepy", "09309823091",
                 "2018", Albatros, LibraryeThree);
-        boolean add = Stephen.getBookss().add(It);
         It.getAuthors().add(Stephen);
         publisherRepository.save(Albatros);
         LibraryRepository.save(LibraryeThree);
