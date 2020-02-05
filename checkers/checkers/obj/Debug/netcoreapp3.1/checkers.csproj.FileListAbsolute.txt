@@ -1,0 +1,11 @@
+C:\Users\Kasia\source\repos\checkers\checkers\bin\Debug\netcoreapp3.1\checkers.exe
+C:\Users\Kasia\source\repos\checkers\checkers\bin\Debug\netcoreapp3.1\checkers.deps.json
+C:\Users\Kasia\source\repos\checkers\checkers\bin\Debug\netcoreapp3.1\checkers.runtimeconfig.json
+C:\Users\Kasia\source\repos\checkers\checkers\bin\Debug\netcoreapp3.1\checkers.runtimeconfig.dev.json
+C:\Users\Kasia\source\repos\checkers\checkers\bin\Debug\netcoreapp3.1\checkers.dll
+C:\Users\Kasia\source\repos\checkers\checkers\bin\Debug\netcoreapp3.1\checkers.pdb
+C:\Users\Kasia\source\repos\checkers\checkers\obj\Debug\netcoreapp3.1\checkers.csprojAssemblyReference.cache
+C:\Users\Kasia\source\repos\checkers\checkers\obj\Debug\netcoreapp3.1\checkers.AssemblyInfoInputs.cache
+C:\Users\Kasia\source\repos\checkers\checkers\obj\Debug\netcoreapp3.1\checkers.AssemblyInfo.cs
+C:\Users\Kasia\source\repos\checkers\checkers\obj\Debug\netcoreapp3.1\checkers.dll
+C:\Users\Kasia\source\repos\checkers\checkers\obj\Debug\netcoreapp3.1\checkers.pdb
