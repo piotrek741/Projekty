@@ -1,0 +1,23 @@
+C:\Users\Kamil\Desktop\Warcaby\Warcaby\bin\Debug\Warcaby.exe
+C:\Users\Kamil\Desktop\Warcaby\Warcaby\bin\Debug\Warcaby.pdb
+C:\Users\Kamil\Desktop\Warcaby\Warcaby\obj\Debug\Warcaby.csprojAssemblyReference.cache
+C:\Users\Kamil\Desktop\Warcaby\Warcaby\obj\Debug\Warcaby.Properties.Resources.resources
+C:\Users\Kamil\Desktop\Warcaby\Warcaby\obj\Debug\Warcaby.csproj.GenerateResource.cache
+C:\Users\Kamil\Desktop\Warcaby\Warcaby\obj\Debug\Warcaby.exe
+C:\Users\Kamil\Desktop\Warcaby\Warcaby\obj\Debug\Warcaby.pdb
+C:\Users\Kamil\Desktop\Warcaby - proste\Warcaby\Warcaby\bin\Debug\Warcaby.exe
+C:\Users\Kamil\Desktop\Warcaby - proste\Warcaby\Warcaby\bin\Debug\Warcaby.pdb
+C:\Users\Kamil\Desktop\Warcaby - proste\Warcaby\Warcaby\obj\Debug\Warcaby.csprojAssemblyReference.cache
+C:\Users\Kamil\Desktop\Warcaby - proste\Warcaby\Warcaby\obj\Debug\Warcaby.Properties.Resources.resources
+C:\Users\Kamil\Desktop\Warcaby - proste\Warcaby\Warcaby\obj\Debug\Warcaby.csproj.GenerateResource.cache
+C:\Users\Kamil\Desktop\Warcaby - proste\Warcaby\Warcaby\obj\Debug\Warcaby.exe
+C:\Users\Kamil\Desktop\Warcaby - proste\Warcaby\Warcaby\obj\Debug\Warcaby.pdb
+C:\Users\Kamil\Desktop\Warcaby - proste\Warcaby\Warcaby\obj\Debug\Warcaby.Game.Checkers.resources
+C:\Users\Kasia\Desktop\warcaby\Warcaby\Warcaby\Warcaby\bin\Debug\Warcaby.exe
+C:\Users\Kasia\Desktop\warcaby\Warcaby\Warcaby\Warcaby\bin\Debug\Warcaby.pdb
+C:\Users\Kasia\Desktop\warcaby\Warcaby\Warcaby\Warcaby\obj\Debug\Warcaby.csprojAssemblyReference.cache
+C:\Users\Kasia\Desktop\warcaby\Warcaby\Warcaby\Warcaby\obj\Debug\Warcaby.Game.Checkers.resources
+C:\Users\Kasia\Desktop\warcaby\Warcaby\Warcaby\Warcaby\obj\Debug\Warcaby.Properties.Resources.resources
+C:\Users\Kasia\Desktop\warcaby\Warcaby\Warcaby\Warcaby\obj\Debug\Warcaby.csproj.GenerateResource.cache
+C:\Users\Kasia\Desktop\warcaby\Warcaby\Warcaby\Warcaby\obj\Debug\Warcaby.exe
+C:\Users\Kasia\Desktop\warcaby\Warcaby\Warcaby\Warcaby\obj\Debug\Warcaby.pdb
