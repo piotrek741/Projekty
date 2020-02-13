@@ -39,38 +39,35 @@ namespace Warcaby
                     {
                         Point currentPoint = CalculateAreaPoint(row, column);
 
-                        Object gameObject = engine.Board[row, column];
+                        Field field = engine.Board[row, column];
 
-                        if (gameObject == Object.EmptyArea)
-                        {
+                        if (field.FieldType == FieldType.EmptyArea) {
                             graphics.FillRectangle(emptyAreaBrush, new Rectangle(currentPoint, areaSize));
-                        }
-                        else if (gameObject == Object.WarArea)
-                        {
+                        } else if (field.FieldType == FieldType.WarArea) {
                             graphics.FillRectangle(warAreaBrush, new Rectangle(currentPoint, areaSize));
-                        }
-                        else if (gameObject == Object.PlayerA)
-                        {
+                        } else if (field.FieldType == FieldType.PlayerA) {
                             graphics.FillRectangle(warAreaBrush, new Rectangle(currentPoint, areaSize));
                             graphics.DrawImage(Checkers.A, new Rectangle(currentPoint.X + areaSize.Width / 4, currentPoint.Y + areaSize.Height / 4, areaSize.Width / 2, areaSize.Height / 2));
-                        }
-                        else if (gameObject == Object.PlayerB)
-                        {
+                        } else if (field.FieldType == FieldType.PlayerB) {
                             graphics.FillRectangle(warAreaBrush, new Rectangle(currentPoint, areaSize));
+                            graphics.DrawImage(Checkers.B, new Rectangle(currentPoint.X + areaSize.Width / 4, currentPoint.Y + areaSize.Height / 4, areaSize.Width / 2, areaSize.Height / 2));
+                        } else if (field.FieldType == FieldType.PlayerAQueen) {
+                            graphics.FillRectangle(warAreaBrush, new Rectangle(currentPoint, areaSize));
+                            // todo - pionek do podmiany na krolowa
+                            graphics.DrawImage(Checkers.A, new Rectangle(currentPoint.X + areaSize.Width / 4, currentPoint.Y + areaSize.Height / 4, areaSize.Width / 2, areaSize.Height / 2));
+                        } else if (field.FieldType == FieldType.PlayerBQueen) {
+                            graphics.FillRectangle(warAreaBrush, new Rectangle(currentPoint, areaSize));
+                            // todo - pionek do podmiany na krolowa
                             graphics.DrawImage(Checkers.B, new Rectangle(currentPoint.X + areaSize.Width / 4, currentPoint.Y + areaSize.Height / 4, areaSize.Width / 2, areaSize.Height / 2));
                         }
                     }
                 }
             };
-            window.MouseClick += (a, e) =>
-            {
-                if (selectedPoint == null && engine.IsPossibleSource(CalculateRow(e.Y), CalculateColumn(e.X)))
-                {
+            window.MouseClick += (a, e) => {
+                if (selectedPoint == null && engine.IsPossibleSource(CalculateRow(e.Y), CalculateColumn(e.X))) {
                     selectedPoint = e.Location;
                     window.Cursor = Cursors.Hand;
-                }
-                else if (selectedPoint != null)
-                {
+                } else if (selectedPoint != null) {
                     bool ok = engine.Move(CalculateRow(selectedPoint.Value.Y), CalculateColumn(selectedPoint.Value.X), CalculateRow(e.Y), CalculateColumn(e.X));
 
                     selectedPoint = null;
@@ -99,7 +96,7 @@ namespace Warcaby
 
         private void UpdateStatus()
         {
-            window.Text = $"Punkty: {engine.Points[Player.A]} : {engine.Points[Player.B]}  |  Ruch dla gracza {engine.Player.ToString()}";
+            window.Text = $"Punkty: {engine.Points[PlayerType.A]} : {engine.Points[PlayerType.B]}  |  Ruch dla gracza {engine.CurrentPlayer.ToString()}";
         }
         private Size CalculateGameArea()
         {
