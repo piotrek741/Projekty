@@ -21,3 +21,12 @@ C:\Users\Kasia\Desktop\warcaby\Warcaby\Warcaby\Warcaby\obj\Debug\Warcaby.Propert
 C:\Users\Kasia\Desktop\warcaby\Warcaby\Warcaby\Warcaby\obj\Debug\Warcaby.csproj.GenerateResource.cache
 C:\Users\Kasia\Desktop\warcaby\Warcaby\Warcaby\Warcaby\obj\Debug\Warcaby.exe
 C:\Users\Kasia\Desktop\warcaby\Warcaby\Warcaby\Warcaby\obj\Debug\Warcaby.pdb
+C:\Users\papi\Documents\GitHub\Projekty\Warcaby\Warcaby\bin\Debug\Warcaby.exe
+C:\Users\papi\Documents\GitHub\Projekty\Warcaby\Warcaby\bin\Debug\Warcaby.pdb
+C:\Users\papi\Documents\GitHub\Projekty\Warcaby\Warcaby\obj\Debug\Warcaby.csprojAssemblyReference.cache
+C:\Users\papi\Documents\GitHub\Projekty\Warcaby\Warcaby\obj\Debug\Warcaby.Game.Checkers.resources
+C:\Users\papi\Documents\GitHub\Projekty\Warcaby\Warcaby\obj\Debug\Warcaby.Properties.Resources.resources
+C:\Users\papi\Documents\GitHub\Projekty\Warcaby\Warcaby\obj\Debug\Warcaby.csproj.GenerateResource.cache
+C:\Users\papi\Documents\GitHub\Projekty\Warcaby\Warcaby\obj\Debug\Warcaby.csproj.CoreCompileInputs.cache
+C:\Users\papi\Documents\GitHub\Projekty\Warcaby\Warcaby\obj\Debug\Warcaby.exe
+C:\Users\papi\Documents\GitHub\Projekty\Warcaby\Warcaby\obj\Debug\Warcaby.pdb
